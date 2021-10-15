@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "AMAApp"
-  spec.version      = "0.0.2"
+  spec.version      = "0.0.3"
   spec.summary      = "A short description of AMAApp."
   spec.description  = <<-DESC
         Try to keep it short, snappy and to the point.
@@ -75,7 +75,7 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "AMAApp", "Sources/**/*.{h,m,swift}"
+  spec.source_files  = "AMAApp/**/*.{h,m,swift}"
 
   spec.public_header_files = "Sources/**/*.h"
 
