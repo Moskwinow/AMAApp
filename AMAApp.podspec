@@ -8,99 +8,99 @@
 
 Pod::Spec.new do |spec|
 
-  # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  These will help people to find your library, and whilst it
-  #  can feel like a chore to fill in it's definitely to your advantage. The
-  #  summary should be tweet-length, and the description more in depth.
-  #
+# ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+#
+#  These will help people to find your library, and whilst it
+#  can feel like a chore to fill in it's definitely to your advantage. The
+#  summary should be tweet-length, and the description more in depth.
+#
 
-  spec.name         = "AMAApp"
-  spec.version      = "0.0.4"
-  spec.summary      = "A short description of AMAApp."
-  spec.description  = <<-DESC
-        Try to keep it short, snappy and to the point.
-                   DESC
+spec.name         = "AMAApp"
+spec.version      = "0.0.5"
+spec.summary      = "A short description of AMAApp."
+spec.description  = <<-DESC
+Try to keep it short, snappy and to the point.
+DESC
 
-  spec.homepage     = "https://github.com/Moskwinow/AMAApp"
-
-
-  # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  Licensing your code is important. See https://choosealicense.com for more info.
-  #  CocoaPods will detect a license file if there is a named LICENSE*
-  #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
-  #
-
-  spec.license      = { :type => "MIT", :file => "LICENSE" }
+spec.homepage     = "https://github.com/Moskwinow/AMAApp"
 
 
-  # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  Specify the authors of the library, with email addresses. Email addresses
-  #  of the authors are extracted from the SCM log. E.g. $ git log. CocoaPods also
-  #  accepts just a name if you'd rather not provide an email address.
-  #
-  #  Specify a social_media_url where others can refer to, for example a twitter
-  #  profile URL.
-  #
+# ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+#
+#  Licensing your code is important. See https://choosealicense.com for more info.
+#  CocoaPods will detect a license file if there is a named LICENSE*
+#  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
+#
 
-  spec.author             = { "Maksym" => "maksym.vechirko@axiomc.com" }
+spec.license      = { :type => "MIT", :file => "LICENSE" }
 
 
-  # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  If this Pod runs only on iOS or OS X, then specify the platform and
-  #  the deployment target. You can optionally include the target after the platform.
-  #
+# ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+#
+#  Specify the authors of the library, with email addresses. Email addresses
+#  of the authors are extracted from the SCM log. E.g. $ git log. CocoaPods also
+#  accepts just a name if you'd rather not provide an email address.
+#
+#  Specify a social_media_url where others can refer to, for example a twitter
+#  profile URL.
+#
 
-  spec.platform     = :ios
-  spec.ios.deployment_target = "10.0"
-
-
-  # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  Specify the location from where the source should be retrieved.
-  #  Supports git, hg, bzr, svn and HTTP.
-  #
-
-  spec.source       = { :git => "https://github.com/Moskwinow/AMAApp.git", :tag => "#{spec.version}" }
+spec.author             = { "Maksym" => "maksym.vechirko@axiomc.com" }
 
 
-  # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  CocoaPods is smart about how it includes source code. For source files
-  #  giving a folder will include any swift, h, m, mm, c & cpp files.
-  #  For header files it will include any header in the folder.
-  #  Not including the public_header_files will make all headers public.
-  #
+# ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+#
+#  If this Pod runs only on iOS or OS X, then specify the platform and
+#  the deployment target. You can optionally include the target after the platform.
+#
 
-  spec.source_files  = "AMAApp/**/*.{h,m,swift}"
-
-  spec.public_header_files = "Sources/**/*.h"
+spec.platform     = :ios
+spec.ios.deployment_target = "10.0"
 
 
+# ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+#
+#  Specify the location from where the source should be retrieved.
+#  Supports git, hg, bzr, svn and HTTP.
+#
 
-  # ――― Project Linking ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  Link your library with frameworks, or libraries. Libraries do not include
-  #  the lib prefix of their name.
-  #
-
-  spec.framework  = "UIKit"
-  spec.framework  = "Firebase"
-  spec.framework  = "SnapKit"
-  spec.framework  = "Kingfisher"
+spec.source       = { :git => "https://github.com/Moskwinow/AMAApp.git", :tag => "#{spec.version}" }
 
 
-  # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  If your library depends on compiler flags you can set them in the xcconfig hash
-  #  where they will only apply to your library. If you depend on other Podspecs
-  #  you can include multiple dependencies to ensure it works.
+# ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+#
+#  CocoaPods is smart about how it includes source code. For source files
+#  giving a folder will include any swift, h, m, mm, c & cpp files.
+#  For header files it will include any header in the folder.
+#  Not including the public_header_files will make all headers public.
+#
 
-  spec.requires_arc = true
+spec.source_files  = "AMAApp/**/*.{h,m,swift}"
 
-  spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
+spec.public_header_files = "Sources/**/*.h"
+
+
+
+# ――― Project Linking ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+#
+#  Link your library with frameworks, or libraries. Libraries do not include
+#  the lib prefix of their name.
+#
+spec.static_framework = true
+spec.framework  = "UIKit"
+spec.dependency "Firebase"
+spec.dependency "SnapKit"
+spec.dependency "Kingfisher"
+
+
+# ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+#
+#  If your library depends on compiler flags you can set them in the xcconfig hash
+#  where they will only apply to your library. If you depend on other Podspecs
+#  you can include multiple dependencies to ensure it works.
+
+spec.requires_arc = true
+
+spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
 
 end
