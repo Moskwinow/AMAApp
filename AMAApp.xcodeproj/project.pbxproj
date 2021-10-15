@@ -37,7 +37,7 @@
 		B4A8845D271962180095670D /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = B4A8845C271962180095670D /* FirebaseAuth */; };
 		B4A88461271962BD0095670D /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = B4A88460271962BD0095670D /* SnapKit */; };
 		B4A88465271963030095670D /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = B4A88464271963030095670D /* Kingfisher */; };
-		B4A88468271963B10095670D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B4A88467271963B10095670D /* GoogleService-Info.plist */; };
+		B4A8846D271969BD0095670D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B4A8846C271969BD0095670D /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,7 +70,7 @@
 		B4A8844827195FE30095670D /* DetailModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailModel.swift; path = ../../../AMAMiniApp/AMAMiniApp/DetailModel.swift; sourceTree = "<group>"; };
 		B4A8844927195FE30095670D /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkService.swift; path = ../../../AMAMiniApp/AMAMiniApp/NetworkService.swift; sourceTree = "<group>"; };
 		B4A8844A27195FE30095670D /* BrandCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BrandCell.swift; path = ../../../AMAMiniApp/AMAMiniApp/BrandCell.swift; sourceTree = "<group>"; };
-		B4A88467271963B10095670D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Sources/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B4A8846C271969BD0095670D /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = "GoogleService-Info.plist"; path = "AMAApp/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,8 +107,8 @@
 			isa = PBXGroup;
 			children = (
 				B4A8841327195F520095670D /* Sources */,
-				B4A88467271963B10095670D /* GoogleService-Info.plist */,
 				B4A8840B27195F460095670D /* Info.plist */,
+				B4A8846C271969BD0095670D /* GoogleService-Info.plist */,
 			);
 			path = AMAApp;
 			sourceTree = "<group>";
@@ -283,7 +283,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4A88468271963B10095670D /* GoogleService-Info.plist in Resources */,
+				B4A8846D271969BD0095670D /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
