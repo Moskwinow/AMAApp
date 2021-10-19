@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
 #
 
 spec.name         = "AMAApp"
-spec.version      = "0.0.6"
+spec.version      = "0.0.7"
 spec.summary      = "A short description of AMAApp."
 spec.description  = <<-DESC
 Try to keep it short, snappy and to the point.
@@ -92,10 +92,10 @@ spec.framework  = "UIKit"
 #  If your library depends on compiler flags you can set them in the xcconfig hash
 #  where they will only apply to your library. If you depend on other Podspecs
 #  you can include multiple dependencies to ensure it works.
-spec.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '/AMAApp/Xcode.app/Contents/Developer/Library/Frameworks/**' }
+spec.xcconfig = { 'SWIFT_INCLUDE_PATHS' => '$(PODS_ROOT)/Firebase/Core/Sources' }
 spec.requires_arc = true
 spec.ios.dependency 'FirebaseAuth', '~> 8.8.0'
-
+spec.ios.dependency 'Firebase'
 spec.ios.dependency 'SnapKit', '~> 5.0.1'
 spec.ios.dependency 'Kingfisher', '~> 6.3.1'
 end

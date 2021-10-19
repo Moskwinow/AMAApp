@@ -7,7 +7,6 @@ target 'AMAApp' do
 
   # Pods for AMAApp
   pod 'Firebase/Auth', '~> 8.8.0'
-  pod 'Firebase'
   pod 'Kingfisher', '~> 6.3.1'
   pod 'SnapKit', '~> 5.0.1'
 end
