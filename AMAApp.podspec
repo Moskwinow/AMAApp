@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
 #
 
 spec.name         = "AMAApp"
-spec.version      = "0.0.5"
+spec.version      = "0.0.6"
 spec.summary      = "A short description of AMAApp."
 spec.description  = <<-DESC
 Try to keep it short, snappy and to the point.
@@ -55,8 +55,8 @@ spec.author             = { "Maksym" => "maksym.vechirko@axiomc.com" }
 #
 
 spec.platform     = :ios
-spec.ios.deployment_target = "10.0"
-
+spec.ios.deployment_target = "13.0"
+spec.swift_version = "5"
 
 # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 #
@@ -77,10 +77,6 @@ spec.source       = { :git => "https://github.com/Moskwinow/AMAApp.git", :tag =>
 
 spec.source_files  = "AMAApp/**/*.{h,m,swift}"
 
-spec.public_header_files = "Sources/**/*.h"
-
-
-
 # ――― Project Linking ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 #
 #  Link your library with frameworks, or libraries. Libraries do not include
@@ -88,9 +84,7 @@ spec.public_header_files = "Sources/**/*.h"
 #
 spec.static_framework = true
 spec.framework  = "UIKit"
-spec.dependency "Firebase"
-spec.dependency "SnapKit"
-spec.dependency "Kingfisher"
+
 
 
 # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -98,9 +92,10 @@ spec.dependency "Kingfisher"
 #  If your library depends on compiler flags you can set them in the xcconfig hash
 #  where they will only apply to your library. If you depend on other Podspecs
 #  you can include multiple dependencies to ensure it works.
-
+spec.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '/AMAApp/Xcode.app/Contents/Developer/Library/Frameworks/**' }
 spec.requires_arc = true
+spec.ios.dependency 'FirebaseAuth', '~> 8.8.0'
 
-spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-
+spec.ios.dependency 'SnapKit', '~> 5.0.1'
+spec.ios.dependency 'Kingfisher', '~> 6.3.1'
 end

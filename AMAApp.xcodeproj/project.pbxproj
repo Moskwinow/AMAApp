@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -34,13 +34,14 @@
 		B4A8845527195FE30095670D /* DetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A8844827195FE30095670D /* DetailModel.swift */; };
 		B4A8845627195FE30095670D /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A8844927195FE30095670D /* NetworkService.swift */; };
 		B4A8845727195FE30095670D /* BrandCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A8844A27195FE30095670D /* BrandCell.swift */; };
-		B4A8845D271962180095670D /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = B4A8845C271962180095670D /* FirebaseAuth */; };
-		B4A88461271962BD0095670D /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = B4A88460271962BD0095670D /* SnapKit */; };
-		B4A88465271963030095670D /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = B4A88464271963030095670D /* Kingfisher */; };
 		B4A8846D271969BD0095670D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B4A8846C271969BD0095670D /* GoogleService-Info.plist */; };
+		C80CAFE5881596CAFB190D7E /* Pods_AMAApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12E009E02F94825DB19B046D /* Pods_AMAApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		12E009E02F94825DB19B046D /* Pods_AMAApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AMAApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C38B4975EA548285BE3E759 /* Pods-AMAApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMAApp.release.xcconfig"; path = "Target Support Files/Pods-AMAApp/Pods-AMAApp.release.xcconfig"; sourceTree = "<group>"; };
+		99B48C8A964D26184DAA7127 /* Pods-AMAApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMAApp.debug.xcconfig"; path = "Target Support Files/Pods-AMAApp/Pods-AMAApp.debug.xcconfig"; sourceTree = "<group>"; };
 		B4A8840727195F460095670D /* AMAApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AMAApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4A8840A27195F460095670D /* AMAApp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMAApp.h; sourceTree = "<group>"; };
 		B4A8840B27195F460095670D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -78,9 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4A88465271963030095670D /* Kingfisher in Frameworks */,
-				B4A8845D271962180095670D /* FirebaseAuth in Frameworks */,
-				B4A88461271962BD0095670D /* SnapKit in Frameworks */,
+				C80CAFE5881596CAFB190D7E /* Pods_AMAApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +91,8 @@
 			children = (
 				B4A8840927195F460095670D /* AMAApp */,
 				B4A8840827195F460095670D /* Products */,
+				D1AB7B67A9B6E5C7F161ACA8 /* Pods */,
+				BBC0301688DC2027E3C4434D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -204,6 +205,24 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		BBC0301688DC2027E3C4434D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				12E009E02F94825DB19B046D /* Pods_AMAApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D1AB7B67A9B6E5C7F161ACA8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				99B48C8A964D26184DAA7127 /* Pods-AMAApp.debug.xcconfig */,
+				1C38B4975EA548285BE3E759 /* Pods-AMAApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -222,6 +241,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B4A8840F27195F460095670D /* Build configuration list for PBXNativeTarget "AMAApp" */;
 			buildPhases = (
+				4F9AC8096AC9B3919265BA05 /* [CP] Check Pods Manifest.lock */,
 				B4A8840227195F460095670D /* Headers */,
 				B4A8840327195F460095670D /* Sources */,
 				B4A8840427195F460095670D /* Frameworks */,
@@ -232,11 +252,6 @@
 			dependencies = (
 			);
 			name = AMAApp;
-			packageProductDependencies = (
-				B4A8845C271962180095670D /* FirebaseAuth */,
-				B4A88460271962BD0095670D /* SnapKit */,
-				B4A88464271963030095670D /* Kingfisher */,
-			);
 			productName = AMAApp;
 			productReference = B4A8840727195F460095670D /* AMAApp.framework */;
 			productType = "com.apple.product-type.framework";
@@ -264,11 +279,6 @@
 				Base,
 			);
 			mainGroup = B4A883FD27195F460095670D;
-			packageReferences = (
-				B4A8845B271962180095670D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
-				B4A8845F271962BD0095670D /* XCRemoteSwiftPackageReference "SnapKit" */,
-				B4A88463271963030095670D /* XCRemoteSwiftPackageReference "Kingfisher" */,
-			);
 			productRefGroup = B4A8840827195F460095670D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -288,6 +298,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4F9AC8096AC9B3919265BA05 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AMAApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B4A8840327195F460095670D /* Sources */ = {
@@ -450,6 +485,7 @@
 		};
 		B4A8841027195F460095670D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99B48C8A964D26184DAA7127 /* Pods-AMAApp.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -478,6 +514,7 @@
 		};
 		B4A8841127195F460095670D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C38B4975EA548285BE3E759 /* Pods-AMAApp.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -525,51 +562,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		B4A8845B271962180095670D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 8.8.1;
-			};
-		};
-		B4A8845F271962BD0095670D /* XCRemoteSwiftPackageReference "SnapKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.1;
-			};
-		};
-		B4A88463271963030095670D /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 7.1.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		B4A8845C271962180095670D /* FirebaseAuth */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B4A8845B271962180095670D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAuth;
-		};
-		B4A88460271962BD0095670D /* SnapKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B4A8845F271962BD0095670D /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = SnapKit;
-		};
-		B4A88464271963030095670D /* Kingfisher */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B4A88463271963030095670D /* XCRemoteSwiftPackageReference "Kingfisher" */;
-			productName = Kingfisher;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B4A883FE27195F460095670D /* Project object */;
 }

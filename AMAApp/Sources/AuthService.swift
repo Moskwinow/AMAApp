@@ -5,7 +5,7 @@
 //  Created by Максим Вечирко on 18.05.2021.
 //
 
-import Firebase
+import FirebaseAuth
 
 public enum AuthMethod {
     case signIn
@@ -19,7 +19,7 @@ public protocol AuthService {
 public final class AuthServiceManager: AuthService {
     
     public static func configurate() {
-        FirebaseApp.configure()
+//        FirebaseApp.configure()
     }
     
     public func auth(_ method: AuthMethod, with email: String, and password: String, completion: @escaping (Result<String, Error>) -> ()) {
